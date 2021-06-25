@@ -13,6 +13,7 @@ export * from "./components/Link";
 export * from "./components/Spinner";
 export * from "./components/Skeleton";
 export * from "./components/Toggle";
+export * from "./components/OrcCoinFlip";
 
 // Hooks
 export * from "./hooks";
