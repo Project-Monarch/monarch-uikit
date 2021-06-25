@@ -29,7 +29,7 @@ export const lightColors: Colors = {
   textDisabled: "#BDC2C4",
   textSubtle: "#175abc",
   borderColor: "#E9EAEB",
-  card: "rgba(255,255,255,0.8)",
+  card: "#FAF9FA",
   popup: "rgba(255,255,255)",
   icon: "#fff",
   gradients: {
@@ -54,7 +54,7 @@ export const darkColors: Colors = {
   textDisabled: "#F8F0E5",
   textSubtle: "#FFF",
   borderColor: "#524B63",
-  card: "rgba(0, 0, 0, 0.5)",
+  card: "rgba(0, 0, 0, 0.9)",
   popup: "rgba(0,0,0)",
   icon: "#FFF",
   gradients: {

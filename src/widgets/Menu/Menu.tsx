@@ -78,8 +78,6 @@ const Menu: React.FC<NavProps> = ({
   logoAlt,
   logoSrc,
   tokenSrc,
-  baseScanUrl,
-  baseScanText,
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -132,7 +130,7 @@ const Menu: React.FC<NavProps> = ({
           logoSrc={logoSrc}
         />
         <Flex>
-          <UserBlock baseUrl={baseScanUrl} baseUrlText={baseScanText} account={account} login={login} logout={logout} />
+          <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>
       </StyledNav>
