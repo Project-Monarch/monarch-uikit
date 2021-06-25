@@ -19,7 +19,7 @@ it("renders correctly", () => {
           type="checkbox"
         />
         <div
-          class="sc-bdfBwQ gpTKnI"
+          class="sc-bdfBwQ fBdCSf"
           scale="md"
         />
       </div>
@@ -42,7 +42,7 @@ it("renders correctly scale sm", () => {
           type="checkbox"
         />
         <div
-          class="sc-bdfBwQ hGGPns"
+          class="sc-bdfBwQ iAuvJj"
           scale="sm"
         />
       </div>
