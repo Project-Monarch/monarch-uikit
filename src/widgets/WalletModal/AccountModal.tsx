@@ -11,11 +11,9 @@ interface Props {
   account: string;
   logout: () => void;
   onDismiss?: () => void;
-  baseUrl: string | null;
-  baseUrlText: string | null;
 }
 
-const AccountModal: React.FC<Props> = ({ baseUrl, baseUrlText, account, logout, onDismiss = () => null }) => (
+const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null }) => (
   <Modal title="Your wallet" onDismiss={onDismiss}>
     <Text
       fontSize="20px"
@@ -25,8 +23,8 @@ const AccountModal: React.FC<Props> = ({ baseUrl, baseUrlText, account, logout, 
       {account}
     </Text>
     <Flex mb="32px">
-      <LinkExternal small href={`${baseUrl || `https://explorer.harmony.one/#/address/`}${account}`} mr="16px">
-        {baseUrlText || `View On Harmony`}
+      <LinkExternal small href={`https://explorer.harmony.one/#/address/${account}`} mr="16px">
+        View On Harmony
       </LinkExternal>
       <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
     </Flex>
