@@ -7,7 +7,8 @@ export const links = [
   },
   {
     label: "Trade",
-    icon: "TradeIcon",
+    icon: "SwapOneIcon",
+    type: "svg",
     items: [
       {
         label: "Exchange",
@@ -21,8 +22,15 @@ export const links = [
   },
   {
     label: "Quest Log",
-    icon: "FarmIcon",
+    icon: "ErrorIcon",
+    type: "svg",
     href: "/questlog",
+  },
+  {
+    label: "Guilds",
+    icon: "GuildIcon",
+    type: "svg",
+    href: "#",
   },
   {
     label: "Analytics",
