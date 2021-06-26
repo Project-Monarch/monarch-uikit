@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
-import { SvgProps } from "../../../components/Svg";
+import * as SvgModule from "../../../components/Svg";
 import * as IconModule from "../icons";
 import Accordion from "./Accordion";
 import { MenuEntry, LinkLabel } from "./MenuEntry";
@@ -12,7 +12,8 @@ interface Props extends PanelProps, PushedProps {
   isMobile: boolean;
 }
 
-const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
+const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgModule.SvgProps> };
+const SvgIcons = (SvgModule as unknown) as { [key: string]: React.FC<SvgModule.SvgProps> };
 
 const Container = styled.div`
   display: flex;
@@ -31,7 +32,12 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   return (
     <Container>
       {links.map((entry) => {
-        const Icon = Icons[entry.icon];
+        let Icon;
+        if (entry.type) {
+          Icon = SvgIcons[entry.icon];
+        } else {
+          Icon = Icons[entry.icon];
+        }
         const iconElement = <Icon width="24px" mr="8px" />;
         const calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
 

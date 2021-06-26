@@ -48,5 +48,7 @@ export { default as SwapVertIcon } from "./Icons/SwapVert";
 export { default as SyncAltIcon } from "./Icons/SyncAlt";
 export { default as WarningIcon } from "./Icons/Warning";
 export { default as LootIcon } from "./Icons/LootToken";
+export { default as SwapOneIcon } from "./Icons/SwapOne";
+export { default as GuildIcon } from "./Icons/Guilds";
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";
