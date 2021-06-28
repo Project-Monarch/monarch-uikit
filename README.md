@@ -4,17 +4,17 @@ Monarch UIkit is a set of React components and hooks used to build pages on Panc
 
 ## Install
 
-`yarn add @monarch/uikit`
+`yarn add @project-monarch/uikit`
 
 ## Setup
 
 ### Theme
 
-Before using the monarch UIkit, you need to provide the theme file to styled-component.
+Before using the project-monarch UIkit, you need to provide the theme file to styled-component.
 
 ```
 import { ThemeProvider } from 'styled-components'
-import { light, dark } from '@monarch/uikit'
+import { light, dark } from '@project-monarch/uikit'
 ...
 <ThemeProvider theme={isDark}>...</ThemeProvider>
 ```
@@ -24,7 +24,7 @@ import { light, dark } from '@monarch/uikit'
 A reset CSS is available as a global styled component.
 
 ```
-import { ResetCSS } from '@monarch/uikit'
+import { ResetCSS } from '@project-monarch/uikit'
 ...
 <ResetCSS />
 ```
